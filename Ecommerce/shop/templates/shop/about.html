@@ -1,0 +1,172 @@
+{% extends 'shop/basic.html' %}
+
+{% block title%} About Us{% endblock %}
+{% block css %}
+        body {
+    font-family: 'Roboto';font-size: 16px;
+}
+
+.aboutus-section {
+    padding: 90px 0;
+}
+.aboutus-title {
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 0 0 39px;
+    padding: 0 0 11px;
+    position: relative;
+    text-transform: uppercase;
+    color: #000;
+}
+.aboutus-title::after {
+    background: #fdb801 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 54px;
+}
+.aboutus-text {
+    color: #606060;
+    font-size: 13px;
+    line-height: 22px;
+    margin: 0 0 35px;
+}
+
+a:hover, a:active {
+    color: #ffb901;
+    text-decoration: none;
+    outline: 0;
+}
+.aboutus-more {
+    border: 1px solid #fdb801;
+    border-radius: 25px;
+    color: #fdb801;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 7px 20px;
+    text-transform: uppercase;
+}
+.feature .feature-box .iconset {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    position: relative;
+    width: 18%;
+}
+.feature .feature-box .iconset::after {
+    background: #fdb801 none repeat scroll 0 0;
+    content: "";
+    height: 150%;
+    left: 43%;
+    position: absolute;
+    top: 100%;
+    width: 1px;
+}
+
+.feature .feature-box .feature-content h4 {
+    color: #0f0f0f;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 5px;
+}
+
+
+.feature .feature-box .feature-content {
+    float: left;
+    padding-left: 28px;
+    width: 78%;
+}
+.feature .feature-box .feature-content h4 {
+    color: #0f0f0f;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 5px;
+}
+.feature .feature-box .feature-content p {
+    color: #606060;
+    font-size: 13px;
+    line-height: 22px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+{% endblock %}
+
+{% block body %}
+
+ <div class="aboutus-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="aboutus">
+                        <h2 class="aboutus-title">About Us</h2>
+                        <p class="aboutus-text">"My name is Ayush Jain.I’m an innovative software engineer with some years of experience managing to handle  all aspects of the development process for small to medium to large-sized companies."</p>
+                        <p class="aboutus-text">I have the skills (mainly C, C++, Python) to manage projects and find solutions and I'd like to do that for any IT based company as a Software Developer.”</p>
+                        <a href="https://www.facebook.com/profile.php?id=100017820007282" class="fa fa-lg fa-facebook"></a>
+                        <a href="https://twitter.com/ayush_jain_19" class="fa fa-twitter"></a>
+                        <a href="https://www.instagram.com/ayu_jain.19/" class="fa fa-instagram"></a>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="aboutus-banner">
+               {% load static %}   <img src="{% static "shop/about.png" %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-6 col-xs-12">
+                    <div class="feature">
+                        <div class="feature-box">
+                            <div class="clearfix">
+                                <div class="iconset">
+                                    <i class="fas fa-band-aid"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <i class="fa fa-band-aid"></i>
+                                    <h4>Passion</h4>
+                                    <p>We are passionate about innovation. We are passionate about financial inclusion. We connect the two. We have endless enthusiasm that runs in our veins to create, to transform, to drive digital services that improve people’s lives.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="clearfix">
+                                <div class="iconset">
+                                    <span class="glyphicon glyphicon-cog icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Care</h4>
+                                    <p>We care about the small things that elegantly pave the road for the big achievements. We encourage and stimulate - our people, our customers - to see further, reach further.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="clearfix">
+                                <div class="iconset">
+                                    <span class="glyphicon glyphicon-cog icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Commitment</h4>
+                                    <p>We are committed to deliver the best solutions for our customers. We are committed to having happy customers. We are committed to positive and inspirational working environment.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
